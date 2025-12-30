@@ -66,7 +66,7 @@ async function GIFTED_MD_PAIR_CODE(id, num, res) {
                 try {
                     const credsData = fs.readFileSync(credsFilePath, 'utf-8');
                     const base64Session = Buffer.from(credsData).toString('base64');
-                    const md = "ANJU-XPRO~" + base64Session;
+                    const md = "ISHAN-MD~" + base64Session;
                     const codeMessage = await sock.sendMessage(sock.user.id, { text: md });
                     
                     let cap = `
